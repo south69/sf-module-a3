@@ -1,0 +1,670 @@
+/*Контейнер для ширины всего сайта*/
+
+
+.box {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	max-width: 1249px;
+	margin: 0 auto;
+}
+
+
+
+.color-first-page {
+	background-color: #F6F2F2;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1249px;
+    margin: 0 auto;
+    min-height: 89px;
+    background-color: #000000;
+}
+
+.menu  {
+	display: flex;
+	flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    position: relative;
+    right: 20px;
+}
+
+.menu li {
+	list-style-type: none;
+}
+
+.menu a {
+	padding: 35.5px 30px 34.5px;
+    color: #e0e0e0;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.menu a {
+	font-family: Open Sans;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 14px;
+}
+
+.menu a:hover {  /*при навдении на ссылку в шапке меняется бэк*/
+	background: #FF3F40;
+}
+
+/*Первая страница*/
+
+.page-1  {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	flex-wrap: wrap;
+	max-height: 688px;
+	margin: 0 auto;
+	margin-top: 50px;
+}
+
+
+
+.text-page-1 {
+	font-family: Open Sans;
+	font-style: normal;
+	font-weight: 800;
+	font-size: 60px;
+	line-height: 72px;
+	text-transform: uppercase;
+	padding-bottom: 0px;
+	margin-bottom: 15px;
+}
+
+.text-page-1-1 {
+
+	font-family: Open Sans;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 15.9953px;
+	line-height: 28px;
+	padding-bottom: 70px;
+	margin-top: 0px;
+}
+
+/*Кнопка на первой странице Contact Us*/
+
+.button-contact-us {
+	display: flex;
+	height: 24px;
+	width: 102px;
+	border-radius: 5px;
+	background-color: #FF2D2D;
+	margin-bottom: 60px;
+}
+
+.button-contact-us {
+	padding: 13.39px 60px 16.61px 63px;
+	text-align: center;
+	font-family: Open Sans;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 18.0412px;
+	line-height: 34px;
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+/*Вставка фото/видео на первой странице*/
+
+
+.video-page-1 {
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+	margin-top: 80px;
+	padding-bottom: 23px;
+}
+
+/*Вторая страница*/ 
+.page-2 {
+ width: 100%;
+ margin-top: 0px;
+ margin-bottom: 100px;
+ 
+}
+
+/*Адаптивность 2 страницы
+
+@media(max-width: 800px;) {
+	.page-2 {
+		display: flex;
+		flex-wrap: wrap;
+	}
+}
+*/
+
+
+/*Блоки на второй странице слева*/
+
+.left-column-page-2 { 
+	width: 60%;
+	margin-top: 0px;
+	margin-right: 50px;
+
+}
+
+.left-column-page-2 h2{
+	font-family: Open Sans;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 42.1902px;
+	text-transform: uppercase;
+	margin-top: 0px;
+}
+
+.left-column-page-2 p {
+	font-family: Open Sans;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 28px;
+	padding-bottom: 20px;
+}
+
+
+/*Кнопка на второй странице Learn More*/
+
+.button-learn-more {
+	height: 55px;
+	width: 227px;
+	border-radius: 5px;
+	background-color: rgba(0, 0, 0, 0.0001);
+	border: 2px solid #FF0000;
+}
+
+.button-learn-more a {
+	padding: 14.39px 20.65px 16.61px 63px;
+	text-align: center;
+	font-family: Open Sans;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 18.0412px;
+	line-height: 34px;
+	text-decoration: none;
+	color: #FF2D2D;
+}
+
+/*Блоки на второй странице справа*/
+.rihgt-column-page-2 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+    margin-top: 40px;
+    padding-top: 50px;
+
+}
+
+.service {
+	width: 288px;
+	margin-bottom: 50px;
+}
+
+
+.service > h3::before {
+	display: block;
+	position: relative;
+	width: 41px;
+    height: 41px;
+    margin-bottom: 20px;
+}
+
+.service h3{
+	font-family: Open Sans;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 24.0692px;
+	line-height: 0px;
+	margin-bottom: 10px;
+}
+
+
+.service p {
+	font-family: Open Sans;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 28px;
+}
+
+.service > .management::before {
+    content: url(../images/shester.png);
+}
+
+.service > .design::before {
+    content: url(../images/pen.png);
+}
+
+
+.service > .logo-branding::before {
+    content: url(../images/diamond.png);
+}
+
+
+.service > .animation::before {
+    content: url(../images/car.png);
+}
+
+
+
+
+/*Третья страница*/
+
+/*Линия в начале страницы серая*/
+
+.grey-line {
+    max-width: 1251px;
+    height: 0.5px;
+	background-color: #ECECEC;
+	opacity: 0.7;
+	margin-bottom: 96px;
+}
+
+.page-3 {
+	display: flex;
+	flex-direction: column;
+}
+
+/*Контейнер для заголовка 3 страницы*/
+.header-page-3 {
+	justify-content: center;
+	align-items: center;
+}
+
+/*Хедер 3 страницы - заголовок, текст*/
+
+.header-page-3 h2 {
+	text-align: center;
+	font-family: Open Sans;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 41.9876px;
+	line-height: 0px;
+	text-transform: uppercase;
+}
+
+.header-page-3 p {
+	text-align: center;
+	font-family: Open Sans;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 15.9953px;
+	line-height: 28px;
+	padding-bottom: 20px;
+	padding-top: 5px;
+}
+/* Красная разделительная линия*/
+.red-line {
+	max-width: 134px;
+	height: 1px;
+	background-color: #FF2D2D;
+}
+
+.galery-menu {
+	display: flex;
+	justify-content: space-around; 
+	align-items: center;
+	flex-wrap: wrap;
+	width: 960px;
+	margin-left: 40px; 
+	margin-top: 72px; 
+
+}
+
+.galery-menu a {
+	font-family: Open Sans;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 22px;
+	line-height: 24px;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+.galery-photo {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.galery-photo-page-3 {
+	flex: 1 1 24%;
+    min-width: 301px;
+    height: 293px;
+    margin-bottom: 18px;
+    object-fit: cover;
+}
+
+.galery-photo-page-3 img {
+	height: 293px;
+	width: 301px;
+}
+
+
+/*Четвертая страница Meet our team*/
+
+.page-4 {
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 85px;
+}
+.header-page-4 {
+	display: flex;
+	width: 100%;
+}
+
+.text-page-4-1 {  /* h1 */
+	font-family: Open Sans;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 41px;
+	text-transform: uppercase;
+	width: 375px;
+	margin-left: -10px;
+	margin-bottom: 10px;
+}
+
+.text-page-4-2 {  /* h2 */
+	font-family: Open Sans;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 30.127px;
+	text-transform: uppercase;
+	margin-top: 38px;
+}
+
+
+.text-page-4-3 { /* p */
+	font-family: Open Sans;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 15px;
+	width: 478px;
+	margin-top: 9px;
+
+}
+
+/*Контейнер с заголовком слева, текст Meet our team*/
+
+.header-page-4 {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+
+}
+
+/*Контейнер с большим фото и фото сотрудников*/
+
+.main-page-4 {
+	display: flex;
+	justify-content: space-between;
+	align-items: stretch;
+	flex-wrap: wrap;
+	width: 100%;
+	margin-top: 58px;
+}
+
+.main-page-4 img {
+	max-width: 321px;
+	margin-top: 35px;
+
+}
+/*Контейнер текста Mark Waugh и фото сотрудников справа от страницы*/
+
+.mini-header-page-4 {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: stretch;
+}
+/*Сделать медиа запрос, чтобы, при сужении страницы, флекс стоял посередине center*/
+
+
+
+
+
+/*Контейнер для текста справа от картинки Mark Waugh*/
+.text-mini-header-page-4 {
+	padding-left: 25px;
+}
+
+
+.box-for-a	{
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	flex-wrap: wrap;
+	max-width: 370px;
+	padding-top: 35px;
+}
+
+.text-mini-header-page-4 a {
+	font-family: Open Sans;
+	font-style: italic;
+	font-weight: normal;
+	font-size: 18px;
+	text-decoration: none;
+	color: #000000;
+}
+
+/*При наведении на ссылку, появляется нижнее подчеркивание*/
+.text-mini-header-page-4 a:hover { 
+	text-decoration: underline;
+}
+
+
+
+/* Фото сотрудников. Галерея. Общий контейнер*/
+
+.photo-mini-header-page-4 {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: flex-end;
+	flex-wrap: wrap;
+	margin-top: 30px;
+
+}
+
+
+/* Фото сотрудников. Галерея. Обертка для каждого фото*/
+
+.galery-photo-page-4	{
+	margin-left: 22px;
+	margin-bottom: 0;
+}
+
+
+
+/*Подписи Фамилия Имя под картинками */
+.fio-team	{
+	font-family: Open Sans;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 18px;
+}
+
+.fio-team	{
+	/* visibility: hidden;  Скрывает поле с ФИО */
+	position: absolute;
+	width: 100%;
+	height: 37px;
+	margin: 0;
+	bottom: 5px;
+	padding-top: 3px;
+	text-align: center;
+	color: white;
+	background-color: #000000;
+	opacity: 0.5;
+	text-transform: uppercase;
+}
+
+/* Не понимаю, как сделать поле ФИО видимым при наведении 
+
+.fio-team:hover {
+	visibility: visible;
+}
+
+*/
+
+.galery-photo-page-4	{
+	position: relative;
+}
+
+
+
+/*Пятая страница*/
+
+.page-5 {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 1577px;
+	background-color: #2D2D2D;
+	margin: 0 auto;
+	margin-top: 50px;
+	padding: 150px 0 150px 0;
+}
+
+.page-5 h2 {
+	font-family: Open Sans;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 42px;
+	color: #FFFFFF;
+}
+
+.page-5 p {
+	font-family: Open Sans;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 15.9953px;
+	color: #FFFFFF;
+}
+
+
+
+.form-email {
+	display: flex;
+	justify-content: space-around;
+	width: 700px;
+}
+
+
+/*Кнопка отправки формы подписаться subscribe*/
+
+.button-subscribe {
+	display: flex;
+	height: 24px;
+	width: 102px;
+	border-radius: 5px;
+	background-color: #FF2D2D;
+	margin-bottom: 60px;
+}
+
+.button-subscribe {
+	text-align: center;
+	font-family: Open Sans;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 34px;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #FFFFFF;
+}
+
+
+/*Шестая страница*/
+.page-6 {
+	margin-top: 40px;
+}
+.header-page-5	{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+
+
+.text-page-5-1 {
+	font-family: Open Sans;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 41px;
+	text-transform: uppercase;
+}
+
+.text-page-5-2 {
+	font-family: Open Sans;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 15px;
+}
+
+.text-page-5-2 {
+	width: 60%;
+}
+
+
+
+/*Футер. Подвал страницы. Footer*/
+.footer {
+	display: flex;
+	margin: 0 auto;
+	max-width: 1586px;
+	background-color: #313030;
+	height: 113px;
+	bottom: 0;
+}
+
+.footer-box {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 1249px;
+	margin: 0 auto;
+}
+
+.text-footer {
+	color: #B8B8B8;
+}
+
+.icon-footer {
+	display: flex;
+	justify-content: space-around;
+	width: 20%;
+}
+
+/*
+
+
+.box {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	max-width: 1249px;
+	margin: 0 auto;
+}
+
+
+
+
+*/
