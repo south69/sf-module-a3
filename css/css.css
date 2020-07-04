@@ -137,16 +137,6 @@
  
 }
 
-/*Адаптивность 2 страницы
-
-@media(max-width: 800px;) {
-	.page-2 {
-		display: flex;
-		flex-wrap: wrap;
-	}
-}
-*/
-
 
 /*Блоки на второй странице слева*/
 
@@ -257,9 +247,6 @@
 .service > .animation::before {
     content: url(../images/car.png);
 }
-
-
-
 
 /*Третья страница*/
 
@@ -494,6 +481,7 @@
 
 /*Подписи Фамилия Имя под картинками */
 .fio-team	{
+	position: relative;
 	font-family: Open Sans;
 	font-style: normal;
 	font-weight: 600;
@@ -656,15 +644,84 @@
 /*
 
 
-.box {
+/*Медиазапросы */
+
+@media screen and (max-width: 768px)	{
+	.box {
 	display: flex;
-	justify-content: flex-start;
+	flex-direction: column;
 	align-items: center;
-	max-width: 1249px;
+	max-width: 768px;
 	margin: 0 auto;
+	}
+	.page-1  {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	margin: 0 auto;
+	margin-top: 5px;
+}
+	.button-contact-us {
+	margin-bottom: 10px;
+}
+	.video-page-1 {
+	margin-top: 5px;
+	padding-bottom: 40px;
+}
+	.page-2 {
+ 	margin-top: 30px;
+}
+	.galery-menu {
+	display: flex;
+	flex-direction: column;
+	justify-content: center; 
+	align-items: center;
+	flex-wrap: wrap;
+	width: 768px;
+	margin-top: 0;
+	margin-left: 30px; 
+}
+	.header-page-3 {
+		width: 768px;
+	}
+	.page-4 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 0px;
+}
+	.main-page-4 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	width: 100%;
+	margin-top: 0px;
+}
+	.main-page-4 img {
+	max-width: 321px;
+	margin-top: 0px;
+}
+	.header-page-4 {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+	.galery-photo-page-4 {
+		position: relative;
+		width: 40%;
+	}
+	.fio-team 	{
+	position: absolute;
+	width: 81%;
+}
+
+
 }
 
 
 
 
-*/
