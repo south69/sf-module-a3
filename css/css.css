@@ -132,8 +132,8 @@
 /*Вторая страница*/ 
 .page-2 {
  width: 100%;
- margin-top: 0px;
- margin-bottom: 100px;
+ margin-top: -50px;
+ margin-bottom: 40px;
  
 }
 
@@ -153,7 +153,8 @@
 	font-weight: bold;
 	font-size: 42.1902px;
 	text-transform: uppercase;
-	margin-top: 0px;
+	margin-top: 10px;
+	margin-bottom: 0px;
 }
 
 .left-column-page-2 p {
@@ -161,14 +162,14 @@
 	font-style: normal;
 	font-weight: normal;
 	font-size: 16px;
-	line-height: 28px;
-	padding-bottom: 20px;
+	padding-bottom: 40px;
 }
 
 
 /*Кнопка на второй странице Learn More*/
 
 .button-learn-more {
+	margin-top: 80px;
 	height: 55px;
 	width: 227px;
 	border-radius: 5px;
@@ -177,13 +178,12 @@
 }
 
 .button-learn-more a {
-	padding: 14.39px 20.65px 16.61px 63px;
+	padding: 20px 20.65px 10px 63px;
 	text-align: center;
 	font-family: Open Sans;
 	font-style: normal;
 	font-weight: bold;
-	font-size: 18.0412px;
-	line-height: 34px;
+	font-size: 18px;
 	text-decoration: none;
 	color: #FF2D2D;
 }
@@ -193,9 +193,7 @@
     display: flex;
     flex-wrap: wrap;
     width: 60%;
-    margin-top: 40px;
-    padding-top: 50px;
-
+    margin-top: 200px;
 }
 
 .service {
@@ -296,7 +294,7 @@
 /* Красная разделительная линия*/
 .red-line {
 	max-width: 134px;
-	height: 1px;
+	height: 2px;
 	background-color: #FF2D2D;
 }
 
@@ -386,6 +384,7 @@
 
 }
 
+
 /*Контейнер с заголовком слева, текст Meet our team*/
 
 .header-page-4 {
@@ -404,7 +403,7 @@
 	align-items: stretch;
 	flex-wrap: wrap;
 	width: 100%;
-	margin-top: 58px;
+	margin-top: 25px;
 }
 
 .main-page-4 img {
@@ -420,8 +419,16 @@
 	justify-content: space-around;
 	align-items: stretch;
 }
-/*Сделать медиа запрос, чтобы, при сужении страницы, флекс стоял посередине center*/
 
+/* Красная разделительная линия*/
+.red-line-2 {
+	max-width: 134px;
+	height: 2px;
+	background-color: #FF2D2D;
+	color: #FF2D2D;
+	margin-left: 0;
+	margin-top: 40px;
+}
 
 
 
@@ -527,8 +534,8 @@
 	max-width: 1577px;
 	background-color: #2D2D2D;
 	margin: 0 auto;
-	margin-top: 50px;
-	padding: 150px 0 150px 0;
+	margin-top: 100px;
+	padding: 100px 0 130px 0;
 }
 
 .text-page-5-1 {
@@ -600,7 +607,7 @@
 
 /*Шестая страница*/
 .page-6 {
-	margin-top: 40px;
+	margin-top: 70px;
 	margin-bottom: 100px;
 }
 .header-page-6	{
@@ -634,40 +641,75 @@
 .main-page-6 {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
 	align-items: stretch;
 	width: 100%;
 }
+
+
+
 /*Форма отправки обратной связи (связаться с нами send message) */
-
-.form-message form {
-	width: 60%;
+.form-message {
+	margin-top: 70px;
 }
 
-.form-message form {
-	width: 400px;
+
+.form-message form >input {
+	border-radius: 10px;
+	background-color: #000000;
+	opacity: 0.1;
+}
+.form-message form >input {
+	color: #000000;
 }
 
-.form-message input {
-	width: 250px;
+.form-message form >input:nth-of-type(-n+2) {
+	width: 342px;
+	height: 71px;
 }
 
-/*
-input.inputt [placeholder*="Type"]	{ /*комбинирование селекторов? 
-	width: 100px;
-	background-color: lightblue;
+.form-message form >input:nth-of-type(3) {
+	width: 734px;
+	height: 252px;
+	margin-top: 50px;
 }
 
-*/
+.form-message form >input:nth-of-type(2) {
+	margin-left: 35px;
+}
 
+input::placeholder { /*изменение цвета placeholder*/
+	color: #000000;
+}
+
+.form-message button {
+	margin-top: 25px;
+	margin-left: 5px;
+	width: 731px;
+	height: 75px;
+	border-radius: 10px;
+	background-color: #FF2D2D;
+	border-color: #FFFFFF;
+}
+
+.form-message button {
+	font-family: Open Sans;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 17px;
+	color: #FFFFFF;
+	text-transform: uppercase;
+}
 
 
 /*Contact info*/
 
 .contact-info-container {
 	display: flex;
-	width: 580px;
+	min-width: 580px;
 	height: 485px;
+	margin-top: 70px;
+	margin-left: 100px;
+	margin-right: 0px;
 }
 
 
